@@ -112,7 +112,7 @@
 
     .hamburger:hover, .cross:hover{
       transition: transform 0.2s linear;
-      transform: scale(2);
+      transform: scale(1.2);
     }
 
     .first .logo{
