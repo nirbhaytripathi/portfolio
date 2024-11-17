@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Geist+Mono:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styling/style.css">
+    <link rel="stylesheet" href="styling/header.css">
+    <link rel="stylesheet" href="styling/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <nav class="desktop-nav">
+            <h2 class="logo">Portfolio</h2>
+            <label for="check" class="hamburger">
+                <img src="vitalFiles/hamburger.svg" alt="hamburger">
+            </label>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#" class="nav-item">Home</a></li>
+                    <li><a href="#project_work" class="nav-item">Projects</a></li>
+                    <li><a href="#contact" class="nav-item">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="source-code">
+                <a href="#">Source Code</a>
+            </div>
+        </nav>
+
+        <input type="checkbox" id="check">
+        <nav class="mobile-nav">
+            <section class="first">
+                <div class="logo">Logo</div>
+                <label for="check" class="cross">
+                    <img src="vitalFiles/cross.svg" alt="cross">
+                </label>
+            </section>
+            <section class="second">
+                <div class="mobile-nav-items">
+                    <ul>
+                        <li><a href="#" class="nav-item">Home</a></li>
+                        <li><a href="#" class="nav-item">Projects</a></li>
+                        <li><a href="#" class="nav-item">About</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-source-code">
+                    <a href="#">Source Code</a>
+                </div>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <div class="left-side">
+                <p class="p1">Hi,There</p>
+                <p class="p2">My Name Is <em>Nirbhay</em></p>
+                <p class="p3">I Am A <span style="color: rgb(65, 65, 253);">Web Developer.</span></p>
+                <div class="follow">
+                    <a href="#">
+                        <div class="icon"><i class="fab fa-twitter"></i></div>
+                    </a>
+                    <a href="#">
+                        <div class="icon"><i class="fab fa-facebook-f"></i></div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="icon"><i class="fab fa-linkedin-in"></i></div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="over-image"></div>
+            <div class="right-side">
+                <img src="./vitalFiles/profile.png" alt="profile" width="300px">
+            </div>
+        </div>
+        <div class="card-menu" id="project_work">
+            <h1>Project Work</h1>
+            <div class="card-container" >
+                <div class="card">
+                    <img src="./vitalFiles/dice.jpg" alt="netflix" width="300px">
+                    <h3>Ludo</h3>
+                </div>
+                <div class="card">
+                    <img src="./vitalFiles/poker.jpg" alt="netflix" width="300px"">
+                    <h3>Poker</h3>
+                    <p></p>
+                </div>
+                <div class="card">
+                    <img src="./vitalFiles/chess.jpg" alt="netflix" width="300px" >
+                    <h3>Chess</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="contact">
+            <div class="contact-container">
+                <div class="get-in-touch">
+                    <h2>Get In Touch</h2>
+                    <p>Hi, I am web developer, If you want to take our services then send a message</p>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-text">
+                                <h4>Address</h4>
+                                <p>Lucknow,vikas nagar</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="contact-text">
+                                <h4>Phone Number</h4>
+                                <p>123456789</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-text">
+                                <h4>E-Mail</h4>
+                                <p><a href="nirbhay@123gamil.com">---------------</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="follow_heading">
+                        <h3 class="follow_heading">Follow Us:</h3>
+                    </div>
+                    <div class="follow">
+                        <a href="#">
+                            <div class="icon"><i class="fab fa-twitter"></i></div>
+                        </a>
+                        <a href="#">
+                            <div class="icon"><i class="fab fa-facebook-f"></i></div>
+                        </a>
+                        
+                        <a href="#">
+                            <div class="icon"><i class="fab fa-linkedin-in"></i></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="send-msg">
+                    <div class="send-contanier">
+                        <div class="send-msg-heading">
+                            <h1>Send a Message</h1>
+                        </div>
+                        <form>
+
+                            <input class="form_input" type="text" id="name" name="name" placeholder="Name" required>
+
+
+                            <input class="form_input" type="email" id="email" name="email" placeholder="E-mail address"
+                                required>
+
+                            <textarea class="form_input" id="message" name="message" placeholder="Message" required
+                                rows="3"></textarea>
+                            <p class="note">
+                                By submitting, you agree to the processing of your personal data as described in the
+                                Message
+                                Statement.
+                            </p>
+                            <div class="text-center"> <button class=" submit_button" type="submit">Submit</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Service</h4>
+                    <ul>
+
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">App Development</a></li>
+                        <li><a href="#">Blockchain deployment</a></li>
+
+
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>information</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+                <p>&copy; all rights are reserved</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

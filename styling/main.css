@@ -1,0 +1,157 @@
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+/* main container - Starts Here */
+
+.main-container {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  padding: 0 200px;
+  background: linear-gradient(136deg, white, pink);
+}
+
+.main-container:hover{
+    background: linear-gradient(136deg, pink, white);
+}
+
+.p1{
+    font-size: 50px;
+}
+
+.p2{
+    font-size: 20px;
+}
+
+em{
+    color: rgb(255, 67, 98);
+}
+
+.p3{
+    font-size: 25px;
+}
+
+.right-side img{
+    border-radius: 100%;
+}
+
+@media (max-width: 1024px){
+    .main-container{
+        padding: 0 100px;
+    }
+}
+
+@media (max-width: 768px){
+    .right-side{
+        display: none;
+    }
+
+    .left-side{
+        z-index: 50;
+    }
+
+    .p1, .p2, .p3{
+        color: white;
+        text-shadow: 5px 5px 5px black;
+    }
+
+    .p1{
+        font-size: 30px;
+    }
+    
+    .p2{
+        font-size: 15px;
+    }
+    
+    .p3{
+        font-size: 18px;
+    }
+
+    .over-image{
+        height: 100%;
+        width:100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 10;
+    }
+
+    .main-container{
+        padding: 0 20px;
+        background-image: url(../vitalFiles/mobile_main_bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+    }
+}
+
+/* main container - Ends Here */
+
+/* card menu - starts here */
+.card-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+    background: linear-gradient(136deg, pink, white, pink);
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+    align-items: start;
+    padding: 30px 20px;
+    background-color: rgb(255, 243, 250);
+    transition: background-color 0.2s ease-in-out;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover{
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.card img{
+    border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+    .card img{
+        width: 100px;
+    }
+}
+
+@media (max-width: 500px){
+    .card-menu{
+        padding: 20px;
+    }
+    .card-container{
+        padding: 10px;
+    }
+    .card img{
+        width: 200px;
+    }
+}
+
+/* card menu - end here */
